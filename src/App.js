@@ -2,23 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const mede = {
+    textDecoration:"underline",
+    color:"red",
+    fontSize:"15px"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ 
+<>
+<h1 style={mede}>Welcome to react</h1>
+<h1 className='osas'>Lorem ipsum dolor sit amet</h1>
+<h2 className='text-green-400'>TailWind</h2>
+<div className='sm:flex block justify-center'>
+  <div className='w-24 h-24  sm:w-52  bg-orange-600 hover:bg-green-400'></div>
+  <div className='w-24 h-24 sm:w-52  bg-orange-500'></div>
+</div>
+</>
   );
 }
 
