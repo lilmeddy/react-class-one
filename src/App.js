@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import Button from './Button';
 function App() {
   const mede = {
     textDecoration:"underline",
@@ -10,6 +10,8 @@ function App() {
   return (
  
 <>
+<Button mede="Hello" color="yellow"></Button>
+<Button mede="Click" color='green'></Button>
 <h1 style={mede}>Welcome to react</h1>
 <h1 className='osas'>Lorem ipsum dolor sit amet</h1>
 <h2 className='text-green-400'>TailWind</h2>
