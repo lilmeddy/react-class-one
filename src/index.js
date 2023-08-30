@@ -12,6 +12,7 @@ import User from './User';
 import reportWebVitals from './reportWebVitals';
 import{BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import InfoNeeded from './StateLifting/InfoNeeded';
+import Fetch from './UseEffect/Fetch';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ root.render(
       <Route path='/first' element={<First/>}/>
       <Route path='/user' element={<User/>}/>
       <Route path='/stateLifting' element={<InfoNeeded/>}/>
+      <Route path='/useEffect' element={<Fetch/>}/>
       <Route path='/datatypes' element={<Datatypes/>}/>
       <Route path='*' element={<NotFound/>}></Route>
     </Routes>
