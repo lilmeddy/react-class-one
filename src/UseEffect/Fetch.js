@@ -1,19 +1,33 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import axios from "axios";
 const Fetch = () => {
     const [pix, setpix] = useState(null)
     const [isLoading, setisLoading] = useState(false)
     useEffect(() => {
         setisLoading(true)
-      fetch("https://jsonplaceholder.typicode.com/posts")
+        try {
+            axios.get("https://jsonplaceholder.typicode.com/posts")
+            .then((data)=>{
+                console.log(data);
+                setpix(data.data)
+               setisLoading(false)
+            }).catch((err)=>{
+                console.log(err ,"by Network");
+            }) 
+        } catch (error) {
+           console.log(error , "By me");
+        }
       
-      .then((res)=>res.json())
-      .then((data)=>{
-        console.log(data);
+    //   fetch("https://jsonplaceholder.typicode.com/posts")
+      
+    //   .then((res)=>res.json())
+    //   .then((data)=>{
+    //     console.log(data);
         
-        setpix(data)
-        setisLoading(false)
-      })
+    //     setpix(data)
+    //     setisLoading(false)
+    //   })
     
       
     }, [])
@@ -37,7 +51,7 @@ const Fetch = () => {
    {pix &&
        pix.map((el,i)=>(
         <div key={i}>
-            <h3>{el.title}</h3>
+            <h3 className={i % 2 === 0 ? "bg-red-500" : "bg-blue-400"}>{el.title}</h3>
             {/* <img src ={el.url} alt=''/> */}
         </div>
        ))

@@ -9,6 +9,7 @@ import NotFound  from './NotFound';
 import Datatypes from './Datatypes';
 import Button from './Button';
 import User from './User';
+import Validate from './Validate';
 import reportWebVitals from './reportWebVitals';
 import{BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import InfoNeeded from './StateLifting/InfoNeeded';
@@ -26,6 +27,7 @@ root.render(
       <Route path='/about' element={<About/>}/>
       <Route path='/first' element={<First/>}/>
       <Route path='/user' element={<User/>}/>
+      <Route path='/validate' element={<Validate/>}/>
       <Route path='/stateLifting' element={<InfoNeeded/>}/>
       <Route path='/useEffect' element={<Fetch/>}/>
       <Route path='/datatypes' element={<Datatypes/>}/>
