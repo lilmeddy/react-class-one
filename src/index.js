@@ -14,6 +14,8 @@ import reportWebVitals from './reportWebVitals';
 import{BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import InfoNeeded from './StateLifting/InfoNeeded';
 import Fetch from './UseEffect/Fetch';
+import Signup from './Validation/Signup';
+import Signin from './Validation/Signin';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -22,7 +24,7 @@ root.render(
     <Routes>
       
       <Route path='/' element={<App/>}/>
-      <Route path='/' element={<Button/>}/>
+      <Route path='/dashboard' element={<Button/>}/>
       <Route path='/home' element={<Navigate to ="/"></Navigate>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/first' element={<First/>}/>
@@ -30,6 +32,8 @@ root.render(
       <Route path='/validate' element={<Validate/>}/>
       <Route path='/stateLifting' element={<InfoNeeded/>}/>
       <Route path='/useEffect' element={<Fetch/>}/>
+      <Route path='/signup' element={<Signup />} />
+       <Route path='/signin' element={<Signin />} />
       <Route path='/datatypes' element={<Datatypes/>}/>
       <Route path='*' element={<NotFound/>}></Route>
     </Routes>

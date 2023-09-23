@@ -1,5 +1,36 @@
 {
-  "create":[],
+  "create": [
+    {
+      "email": "osamedeaghedo1806@gmail.com",
+      "password": "osamede",
+      "c_password": "osamede",
+      "f_name": "Priscilla",
+      "l_name": "aghedo",
+      "phone": "090-523-2345",
+      "company": "Google",
+      "id": 1
+    },
+    {
+      "email": "osamedeaghedo1806@gmail.com",
+      "password": "osamede",
+      "id": 2
+    },
+    {
+      "email": "osamedeaghedo1806@gmail.com",
+      "password": "osamede",
+      "c_password": "osamede",
+      "f_name": "Priscilla",
+      "l_name": "aghedo",
+      "phone": "090-523-2345",
+      "company": "Google",
+      "id": 3
+    },
+    {
+      "email": "osamedeaghedo1806@gmail.com",
+      "password": "osamede",
+      "id": 4
+    }
+  ],
   "posts": [
     {
       "id": 1,

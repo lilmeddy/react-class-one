@@ -54,6 +54,7 @@ const User = () => {
         setEditUsername('');
         setuserIndex('');
     }
+   
   return (
     <>
     <form action="">
@@ -123,6 +124,7 @@ const User = () => {
             )} 
         </tbody>
     </table>
+   
 </div>
 
     </>
